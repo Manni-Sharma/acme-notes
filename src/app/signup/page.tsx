@@ -18,7 +18,7 @@ const AuthPage = () => {
       <div className="w-full max-w-md bg-[#1e1e1e] text-white p-8 rounded-lg shadow-lg">
         <div className="flex justify-center mb-8">
           <Image
-            src="/logo.png" // Path to your logo
+            src="/logo.png"
             alt="Logo"
             width={40}
             height={40}
