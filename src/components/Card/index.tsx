@@ -7,7 +7,7 @@ type CardProps = {
 
 const Card: React.FC<CardProps> = ({ description, title }) => {
   return (
-    <div className="bg-black max-w-sm p-6 border border-gray-100 rounded-lg shadow hover:bg-gray-800 transition-colors">
+    <div className="bg-black text-white  max-w-sm p-6 border border-gray-100 rounded-lg shadow  transition-colors">
       <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
         {title}
       </h5>

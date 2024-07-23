@@ -33,15 +33,19 @@ const Content: React.FC = () => {
           </motion.p>
         </div>
       </motion.div>
-      <div className="px-10 pt-10 flex flex-wrap gap-10">
-        {FEATURES?.map((feature, index) => (
-          <Card
-            key={index}
-            title={feature?.title}
-            description={feature?.description}
-          />
-        ))}
-      </div>
+      <section className="features bg-black p-6">
+        <h2 className="text-3xl font-bold mb-4 mt-4 px-4">Features</h2>
+
+        <div className="px-10 pt-10 flex flex-wrap gap-10">
+          {FEATURES?.map((feature, index) => (
+            <Card
+              key={index}
+              title={feature?.title}
+              description={feature?.description}
+            />
+          ))}
+        </div>
+      </section>
     </div>
   );
 };

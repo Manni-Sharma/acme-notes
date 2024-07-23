@@ -12,7 +12,7 @@ const MenuItems: React.FC<{ className: string; linkClass?: string }> = ({
         return (
           <Link
             key={index}
-            className={`hover:text-purple-500 ${linkClass}`}
+            className={`hover:text-purple-500 hover:underline ${linkClass}`}
             href={item?.route}
           >
             {item?.name}
