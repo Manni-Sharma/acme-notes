@@ -1,8 +1,9 @@
 "use client";
 import { FEATURES } from "@/constants";
-import { slideInFromLeft } from "@/utils/animate";
+import { slideInFromLeft, slideInFromRight } from "@/utils/animate";
 import { motion } from "framer-motion";
 import React from "react";
+import Image from "next/image";
 import Card from "../Card";
 
 const Content: React.FC = () => {
@@ -32,6 +33,18 @@ const Content: React.FC = () => {
             inspired.
           </motion.p>
         </div>
+        <motion.div
+          variants={slideInFromRight(0.8)}
+          className="w-full pl-5 h-full flex justify-center items-center"
+        >
+          <Image
+            src="/hero.jpeg"
+            className="object-contain"
+            alt="demo"
+            height={600}
+            width={600}
+          />
+        </motion.div>
       </motion.div>
       <section className="features bg-black p-6">
         <h2 className="text-3xl font-bold mb-4 mt-4 px-4">Features</h2>
